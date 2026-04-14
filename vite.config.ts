@@ -153,6 +153,11 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
+  // Base path for GitHub Pages (project pages)
+  // This must match the repository name when publishing to
+  // https://<user>.github.io/<repo>/
+  base: '/Air-Quality-Predicyor/',
+
   plugins,
   resolve: {
     alias: {
